@@ -1,7 +1,7 @@
 from django.db import models
 from .Address import Address
-import User
+from .User import User
 
 
 class ShippingAddress(Address):
-    shipping = models.ForeignKey(User, many=True, on_delete=models.CASCADE)
+    shipping = models.ForeignKey(User, on_delete=models.CASCADE)
