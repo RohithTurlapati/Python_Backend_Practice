@@ -20,3 +20,10 @@ data = {"a": "1,2,3",
 st.json(data)
 
 st.write("hello world")
+
+data = {
+    "col1": [1,2,3,4,5],
+    "col2": [6,7,8,910]
+}
+
+st.table(data)
